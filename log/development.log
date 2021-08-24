@@ -37042,3 +37042,116 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms | Allocations: 7728)
 
 
+Started GET "/" for ::1 at 2021-08-24 18:43:38 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1064)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 13339)
+
+
+Started GET "/" for ::1 at 2021-08-24 18:44:02 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 819)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 8822)
+
+
+Started GET "/" for ::1 at 2021-08-24 18:44:08 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 825)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 8841)
+
+
+Started GET "/result?content=%E3%81%AB%E3%82%83%E3%83%BC%E3%82%93&commit=%E6%B8%AC%E5%AE%9A" for ::1 at 2021-08-24 18:44:18 +0900
+Processing by HomeController#result as HTML
+  Parameters: {"content"=>"にゃーん", "commit"=>"測定"}
+  [1m[36mWord Load (1.2ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/home_controller.rb:24:in `result'
+  Rendering home/result.html.erb within layouts/application
+  Rendered home/result.html.erb within layouts/application (Duration: 2.4ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 1.9ms | Allocations: 19712)
+
+
+Started GET "/img/twitter-icon.png" for ::1 at 2021-08-24 18:44:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/twitter-icon.png"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-08-24 18:44:35 +0900
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 646)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 7769)
+
+
+Started GET "/img/twitter-icon.png" for ::1 at 2021-08-24 18:44:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/twitter-icon.png"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

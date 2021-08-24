@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# issenman_checker
+#### Video Demo: <>
+#### Description: Annual Income Issenman Checker is a tool to check the "Annual Income Issenman Degree" from the inputted text. It contains a lot of black jokes, so please enjoy it as just one of the stories.
