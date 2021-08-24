@@ -1,0 +1,32 @@
+<div class="wrap">
+        <header>
+            <h1 class="title">年収イッセンマンチェッカー</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="messages">
+                    <p class="nensyu text__slideIn">年収<%= @nensyu %>！</p>
+                    <p class="message">
+                        あなたの「年収イッセンマン度」は<%= @num %>点です。
+                    </p>
+                   <p class="message2">
+                    <%= @message1 %><br>
+                    <%= @message2 %><br>
+                    <%= @message3 %>
+                   </p>
+                </div>
+                <div class="twitter-icon">
+                    <a href="#" class="hov">
+                        <img src="/img/twitter-icon.png" alt="">
+                    </a>
+                    <%= link_to image_tag('twitter-icon.png', class: 'hov'), "https://twitter.com/share?url=#{@top_page}&text=#{@text}&hashtags=年収イッセンマンチェッカー", target: :_blank, rel: "noopener noreferrer" %>
+                </div>
+                <%= link_to "戻る", root_path, class: 'return-btn hov' %>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2021 @aose_developer</p>
+        </footer>
+    </div>

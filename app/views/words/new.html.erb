@@ -1,0 +1,8 @@
+<div class="words-wrap">
+    <div class="word-create">
+        <%= form_with url: {controller: :words, action: :create} do |f| %>
+            <%= f.text_field :content, class: "form-size", autofocus: true %>
+            <%= f.submit "送信" %>
+        <% end %>
+    </div>
+</div>

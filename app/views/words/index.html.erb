@@ -1,0 +1,17 @@
+<h1>単語一覧</h1>
+<ul>
+<div class="nav">
+    <li><%= link_to "追加", {controller: :words, action: :new}, class: "color" %></li>
+    <li><%= link_to "ログアウト", {controller: :words, action: :logout}, class: "color", method: :post %></li>
+</div>
+</ul>
+<div class="w">
+    <div class="words-wrap flex">
+        <% @words.each do |word| %>
+            <div class="word-post">
+                <p><%= word.content %></p>
+                <p class="delete"><%= link_to "削除", "/admin/add/word/page/#{word.id}/destroy", class: "color", method: :delete %></p>
+            </div>
+        <% end %>
+    </div>
+</div>

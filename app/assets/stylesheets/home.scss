@@ -1,0 +1,263 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    width: 100vw;
+    height: 6.25rem;
+    background-color: #444444;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nensyu {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #444444;
+    margin: 4rem
+}
+
+.messages {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.message {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #444444;
+    margin: 4rem;
+}
+
+.message2 {
+    width: 600px;
+    height: 20rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 3rem;
+    /* or 175% */
+
+    text-align: center;
+    letter-spacing: 0.15em;
+
+    color: #444444;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100vw;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.textarea {
+    text-align: center;
+}
+
+textarea {
+    width: 32rem;
+    height: 18rem;
+    margin-bottom: 3rem;
+    resize: none;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #444444;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.check-btn {
+    width: 10rem;
+    height: 3.5rem;
+    background: #FF8F8F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: #FFFFFF;
+    border: none;
+}
+
+.return-btn {
+    width: 10rem;
+    height: 3.5rem;
+    background: #8FFFC3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    color: #444444;
+    border: none;
+}
+
+.hov:hover {
+    opacity: 0.7;
+}
+
+.twitter-icon {
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
+.text__slideIn {
+    animation: slideIn 1.6s forwards;
+  }
+  @keyframes slideIn {
+    0% {
+    opacity: 0;
+    }
+    20% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.wrap {
+    animation: fadein 3s forwards;
+}
+@keyframes fadein {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@media screen and (max-width: 780px) {
+    .message {
+        font-size: 18px;
+    }
+
+    .message2 {
+        font-size: 18px;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+    .check-btn {
+        margin-bottom: 10rem;
+    }
+
+    .return-btn {
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .nensyu {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 0.95rem;
+        margin: 2.5rem 1.5rem;
+    }
+
+    .message2 {
+        width: auto;
+        font-size: 0.95rem;
+    }
+
+    textarea {
+        width: 250px;
+        height: 14rem;
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .twitter-icon {
+        margin: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .check-btn {
+        width: 282px;
+        margin-bottom: 4rem;
+    }
+
+    .return-btn {
+        width: 282px;
+        margin-bottom: 4rem;
+    }
+}

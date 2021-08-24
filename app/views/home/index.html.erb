@@ -1,0 +1,23 @@
+<div class="wrap">
+    <header>
+        <h1 class="title">年収イッセンマンチェッカー</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <p class="message">
+                入力された文章から「年収イッセンマン度」を測定します。<br>Twitterプロフィール、ツイートなどを貼り付けてください。
+            </p>
+            <div class="textarea">
+                <%= form_with url: result_path, method: :get, local: true do |f| %>
+                    <%= f.text_area :content %>
+                    <%= f.submit "測定", class: 'check-btn hov' %>
+                <% end %>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 @aose_developer</p>
+    </footer>
+</div>
